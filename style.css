@@ -202,3 +202,55 @@ body {
   font-size: 14px;
   color: #666;
 }
+
+/* Second brain */
+.second-brain {
+  padding: 90px 0;
+}
+
+.brain-row {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+}
+
+.brain-image {
+  flex: 1;
+}
+
+.brain-image img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.brain-content {
+  flex: 1;
+}
+
+.kicker {
+  color: #28a745;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.brain-content h2 {
+  font-size: 32px;
+  margin: 12px 0 16px;
+}
+
+.brain-content p {
+  color: #666;
+  line-height: 1.7;
+}
+
+.benefits {
+  list-style: none;
+  margin-top: 20px;
+}
+
+.benefits li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
