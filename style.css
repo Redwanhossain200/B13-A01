@@ -29,6 +29,11 @@ body {
   transition: all 0.2s ease;
 }
 
+.ea-inner .btn {
+  padding: 14px 28px;
+  font-size: 15px;
+}
+
 .btn-primary {
   background: #28a745;
   color: #fff;
@@ -253,4 +258,52 @@ body {
   align-items: center;
   gap: 10px;
   margin-bottom: 12px;
+}
+
+/* Early Access */
+.early-access {
+  background: #faf8f4;
+  padding: 100px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.ea-card {
+  background: #ffffff;
+  max-width: 960px;
+  width: 100%;
+  padding: 70px 20px;
+  border-radius: 16px;
+  text-align: center;
+}
+
+.ea-card h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #0b1f33;
+}
+
+.ea-card .muted {
+  font-weight: 400;
+  margin-top: 16px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #6b7a8c;
+}
+
+.ea-inner {
+  margin-top: 36px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 22px;
+}
+
+
+.ea-notes {
+  margin-top: 8px;
+  display: flex;
+  gap: 8px;
+  color: #6b7a8c;
+  font-size: 14px;
 }
