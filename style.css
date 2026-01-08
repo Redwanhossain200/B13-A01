@@ -92,6 +92,52 @@ body {
 }
 
 /* hero Section */
+
+/* badge */
+.badge-wrap {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.live-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 14px;
+  background: #ffffff;
+  color: #218838;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 999px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* blinking dot */
+.live-dot {
+  width: 8px;
+  height: 8px;
+  background: #218838;
+  border-radius: 50%;
+  position: relative;
+  animation: blink 1.2s infinite;
+}
+
+/* pulse ring */
+.live-dot::after {
+  content: "";
+  position: absolute;
+  inset: -6px;
+  border-radius: 50%;
+  background: rgba(159, 239, 68, 0.25);
+  animation: pulse 1.2s infinite;
+}
+
+.dark .live-badge {
+  background: rgba(255, 255, 255, 0.1);
+  color: #0b1f33;
+}
+
 .hero {
   background: linear-gradient(rgba(0, 0, 0, 0.25),
       rgba(0, 0, 0, 0.35)),
@@ -373,4 +419,29 @@ body {
   text-align: center;
   font-size: 14px;
   color: #d0d6dd;
+}
+
+/* animations */
+@keyframes blink {
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: .2;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(.6);
+    opacity: .8;
+  }
+
+  100% {
+    transform: scale(1.8);
+    opacity: 0;
+  }
 }
