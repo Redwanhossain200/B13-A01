@@ -99,7 +99,7 @@ body {
 .badge-wrap {
   display: flex;
   justify-content: center;
-  margin-bottom: 16px;
+  margin-bottom: 10px;
 }
 
 .status-badge {
@@ -161,7 +161,7 @@ body {
   font-weight: 700;
   margin-top: 20px;
   color: #fff;
-  line-height: 1.2;
+  line-height: 1.15;
 }
 
 .accent {
@@ -174,7 +174,9 @@ body {
   font-size: 15px;
   line-height: 24px;
   font-weight: 400;
-  letter-spacing: 0%;
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero-actions {
@@ -216,7 +218,7 @@ body {
 .card {
   background: #fff;
   border-radius: 12px;
-  padding: 28px;
+  padding: 32px;
   text-align: center;
   flex: 1;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
@@ -267,7 +269,8 @@ body {
 }
 
 .brain-image img {
-  width: 100%;
+  max-width: 100%;
+  height: auto;
   border-radius: 12px;
 }
 
@@ -321,8 +324,9 @@ body {
 .ea-card {
   background: #faf8f4;
   max-width: 1190px;
-  height: 384px;
+  min-height: 384px;
   width: 100%;
+  height: auto;
   padding: 70px 20px;
   border-radius: 12px;
   text-align: center;
@@ -349,7 +353,6 @@ body {
   align-items: center;
   gap: 22px;
 }
-
 
 .ea-notes {
   margin-top: 8px;
@@ -380,10 +383,11 @@ body {
 }
 
 .footer-right {
+  display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  gap: 1.6;
+  gap: 12px;
 }
 
 .social-title {
@@ -412,7 +416,7 @@ body {
 }
 
 .social-icons a:hover {
-  transform: translateY(-4px);
+  transform: translateY(-6px);
   background-color: #218838;
   box-shadow: 0 0 20px 10px #28a74580;
 }
