@@ -8,7 +8,6 @@ body {
   font-family: 'Inter', sans-serif;
   background: #ffffff;
   color: #222;
-  letter-spacing: 0%;
 }
 
 /* Container */
@@ -97,49 +96,39 @@ body {
 
 /* hero Section */
 
-/* badge */
 .badge-wrap {
   display: flex;
   justify-content: center;
   margin-bottom: 16px;
 }
 
-.live-badge {
+.status-badge {
   display: inline-flex;
   align-items: center;
   gap: 8px;
   padding: 6px 14px;
-  background: #ffffff;
-  color: #218838;
+  background: rgba(255, 255, 255, 1);
+  color: #30B868;
   font-size: 14px;
-  font-weight: 700;
+  font-weight: 600;
   border-radius: 999px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+  transition: all .2s ease;
 }
 
-/* blinking dot */
-.live-dot {
+/* green dot */
+.status-badge .dot {
   width: 8px;
   height: 8px;
-  background: #218838;
+  background: #22c55e;
   border-radius: 50%;
-  position: relative;
-  animation: blink 1.2s infinite;
+  box-shadow: 0 0 0 3px rgba(34, 197, 94, 0.2);
 }
 
-/* pulse ring */
-.live-dot::after {
-  content: "";
-  position: absolute;
-  inset: -6px;
-  border-radius: 50%;
-  background: rgba(159, 239, 68, 0.25);
-  animation: pulse 1.2s infinite;
-}
-
-.dark .live-badge {
-  background: rgba(255, 255, 255, 0.1);
-  color: #0b1f33;
+.status-badge:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
 }
 
 .hero {
@@ -427,7 +416,6 @@ body {
   box-shadow: 0 0 20px 10px #28a74580;
 }
 
-/* Divider */
 .divider {
   margin: 30px 0 20px;
   height: 1px;
@@ -442,29 +430,4 @@ body {
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0%;
-}
-
-/* animations */
-@keyframes blink {
-
-  0%,
-  100% {
-    opacity: 1;
-  }
-
-  50% {
-    opacity: .2;
-  }
-}
-
-@keyframes pulse {
-  0% {
-    transform: scale(.6);
-    opacity: .8;
-  }
-
-  100% {
-    transform: scale(1.8);
-    opacity: 0;
-  }
 }
