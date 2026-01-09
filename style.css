@@ -320,10 +320,11 @@ body {
 
 .ea-card {
   background: #faf8f4;
-  max-width: 1360px;
+  max-width: 1190px;
+  height: 384px;
   width: 100%;
   padding: 70px 20px;
-  border-radius: 16px;
+  border-radius: 12px;
   text-align: center;
 }
 
