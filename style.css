@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   background: #ffffff;
   color: #222;
 }
@@ -59,7 +59,6 @@ html {
 .btn:hover {
   transform: translateY(-2px);
   box-shadow: 0 6px 18px rgba(40, 167, 69, 0.25);
-
 }
 
 .btn-outline:hover {
@@ -118,13 +117,13 @@ header {
   gap: 8px;
   padding: 6px 14px;
   background: rgba(255, 255, 255, 1);
-  color: #30B868;
+  color: #30b868;
   font-size: 14px;
   font-weight: 600;
   border-radius: 999px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   cursor: pointer;
-  transition: all .2s ease;
+  transition: all 0.2s ease;
 }
 
 /* green dot */
@@ -142,8 +141,8 @@ header {
 }
 
 .hero {
-  background: linear-gradient(rgba(0, 0, 0, 0.25),
-      rgba(0, 0, 0, 0.35)),
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.35)),
     url("./assets/hero-bg.png");
   background-size: cover;
   background-position: center;
@@ -162,7 +161,7 @@ header {
   padding: 6px 14px;
   border-radius: 20px;
   font-size: 14px;
-  color: #30B868;
+  color: #30b868;
   display: inline-block;
 }
 
@@ -486,7 +485,6 @@ header {
   }
 
   .nav-inner img {
-
     margin-bottom: 10px;
     width: 120px;
   }
